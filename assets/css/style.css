@@ -333,7 +333,7 @@ main {
 
 .avatar-box {
   background: var(--bg-gradient-onyx);
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .info-content .name {
@@ -763,7 +763,11 @@ main {
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img,
+.clients-item img:hover {
+  filter: grayscale(0) !important;
+  transition: none !important;
+}
 
 
 
@@ -1870,7 +1874,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   color: var(--orange-yellow-crayola);
   opacity: 0.9;
 }
-  }
+
 
   .contact-info :is(.contact-link, time, address) {
     --fs-7: 14px;
